@@ -1,2 +1,2 @@
-# JavaOrientacaoObjeto
- exercicios para aprendizagem de POO
+# Curso de Java - Orientação a Objetos
+ Exercicios para aprendizagem de POO
