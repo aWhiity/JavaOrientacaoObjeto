@@ -1,7 +1,7 @@
 public class Conta {
     int agencia;
     int numero;
-    Cliente titular;
+    String titular;
     double saldo;
 
     public void deposita(double valor) {
@@ -25,14 +25,14 @@ public class Conta {
         return false;
     }
 
-    public Conta(int agencia, int numero, Cliente titular, double saldo) {
+    public Conta(int agencia, int numero, String titular, double saldo) {
         this.agencia = agencia;
         this.numero = numero;
         this.titular = titular;
         this.saldo = saldo;
     }
 
-    public Conta(int agencia, int numero, Cliente titular) {
+    public Conta(int agencia, int numero, String titular) {
         this(agencia, numero, titular, 0);
     }
 
