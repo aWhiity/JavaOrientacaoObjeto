@@ -1,3 +1,4 @@
+package Composto;
 public class TesteSacaNegativo {
     public static void main(String[] args) {
         Conta conta1 = new Conta(123, 14);

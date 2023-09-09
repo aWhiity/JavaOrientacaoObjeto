@@ -1,3 +1,4 @@
+package Composto;
 public class Cliente {
     String nome;
     String profissao;
