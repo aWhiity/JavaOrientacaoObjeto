@@ -2,7 +2,7 @@ package Encapsulado;
 
 public class TestaGetSet {
     public static void main(String[] args) {
-        Conta conta = new Conta();
+        Conta conta = new Conta(2345223, 23123);
         Cliente jose = new Cliente();
         conta.setNumero(123);
         conta.setTitular(jose);

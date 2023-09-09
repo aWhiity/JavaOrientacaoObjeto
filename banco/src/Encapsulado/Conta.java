@@ -4,6 +4,7 @@ public class Conta {
     private int numero;
     private double saldo;
     private Cliente titular;
+    private static int total;
 
     public void deposita(double valor) {
         this.saldo += valor;
@@ -32,6 +33,7 @@ public class Conta {
     }
 
     public Conta(int agencia, int numero, Cliente titular, double saldo) {
+        Conta.total++;
         this.agencia = agencia;
         this.numero = numero;
         this.titular = titular;
@@ -47,10 +49,6 @@ public class Conta {
     }
     
 
-    public Conta() {
-        this(0, 0, null, 0);
-    }
-
     public int getNumero() {
         return this.numero;
     }
@@ -64,7 +62,23 @@ public class Conta {
     }
 
     public void setNumero(int numero) {
+        if(numero<=0) {
+            System.out.println("Não é possível colocar um número menor ou igual a 0.");
+            return;
+        }
         this.numero = numero;
+    }
+
+    public void setAgencia(int agencia) {
+        if(agencia<=0) {
+            System.out.println("Não é possível adicionar uma agencia menor ou igual a 0.");
+            return;
+        }
+        this.agencia = agencia;
+    }
+
+    public static int getTotal() {
+        return Conta.total;
     }
 
     @Override
