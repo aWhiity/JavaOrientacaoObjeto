@@ -2,7 +2,7 @@ public class Conta {
     int agencia;
     int numero;
     Cliente titular;
-    double saldo;
+    private double saldo;
 
     public void deposita(double valor) {
         this.saldo += valor;
@@ -13,6 +13,7 @@ public class Conta {
             this.saldo -= valor;
             return true;
         }
+        System.out.println("Valor invalido.");
         return false;
     }
 
@@ -23,6 +24,10 @@ public class Conta {
             return true;
         }
         return false;
+    }
+
+    public double getSaldo() {
+        return this.saldo;
     }
 
     public Conta(int agencia, int numero, Cliente titular, double saldo) {
