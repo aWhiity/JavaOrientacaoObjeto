@@ -1,8 +1,8 @@
-package Encapsulado.Exercicios;
+package Encapsulado.Exercicios.BancoSemNegativo;
 
 import java.util.Scanner;
 
-public class InfoBanco {
+public class TestaConta {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Digite o numero da conta.");
