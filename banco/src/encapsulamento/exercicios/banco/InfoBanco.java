@@ -16,11 +16,12 @@ public class InfoBanco {
         if(escolha==1) {
             System.out.println("Qual o valor a ser depositado?(formato: 00,00)");
             conta.depositar(input.nextFloat());
-            System.out.println("Dados atuais:");
-            System.out.println("Nome: " + conta.getTitular());
-            System.out.println("Número: " + conta.getNumero());
-            System.out.println("Saldo: " + conta.getSaldo());
+            System.out.println(conta);
         }
+        System.out.println("Digite o valor do deposito: ");
+        conta.depositar(input.nextFloat());
+        System.out.println(conta);
+
         System.out.println("Digite o valor do saque: ");
         conta.sacar(input.nextFloat());
         System.out.println(conta);

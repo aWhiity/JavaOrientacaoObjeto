@@ -28,7 +28,7 @@ public class Conta {
             this.saldo+=valor;
             return;
         } else {
-            System.out.println("Valor invalido.");
+            System.out.println("Não é possível depositar um valor negativo.");
         }
     }
 
@@ -56,8 +56,7 @@ public class Conta {
 
     @Override
     public String toString() {
-        return "Conta [numero=" + numero + ", titular=" + titular + ", saldo=" + saldo + "]";
+        return "Nome: " + this.titular + "\nNúmero: " + this.numero + "\nSaldo: " + this.saldo;
     }
-
     
 }
