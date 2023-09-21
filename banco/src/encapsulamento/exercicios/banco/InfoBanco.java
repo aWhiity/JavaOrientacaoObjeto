@@ -1,4 +1,4 @@
-package Encapsulado.Exercicios;
+package encapsulamento.exercicios.banco;
 
 import java.util.Scanner;
 

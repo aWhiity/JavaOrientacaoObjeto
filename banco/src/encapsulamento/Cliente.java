@@ -1,4 +1,4 @@
-package Encapsulado;
+package encapsulamento;
 public class Cliente {
     private String nome;
     private String profissao;

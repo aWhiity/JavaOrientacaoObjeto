@@ -1,4 +1,4 @@
-package Encapsulado.Exercicios;
+package encapsulamento.exercicios.bancoSemNegativo;
 /*Em um banco, para se cadastrar uma conta bancária, é necessário informar o número da conta, o nome do
 titular da conta, e o valor de depósito inicial que o titular depositou ao abrir a conta. Este valor de depósito
 inicial, entretanto, é opcional, ou seja: se o titular não tiver dinheiro a depositar no momento de abrir sua
@@ -30,20 +30,29 @@ public class Conta {
         } else {
             System.out.println("Valor invalido.");
         }
+        this.aplicarRendimento();
     }
 
     public void sacar(float valor) {
-        this.saldo-=valor+5;
-        System.out.println(this.saldo);
+        if(this.saldo < valor+5) {
+            System.out.println("Saldo insuficiente.");
+            return;
+        } else {
+            this.saldo-=valor+5;
+        }
     
     }
 
+    private void aplicarRendimento() {
+        this.saldo *= 1.10;
+    }
+
     public int getNumero() {
-        return numero;
+        return this.numero;
     }
 
     public String getTitular() {
-        return titular;
+        return this.titular;
     }
 
     public void setTitular(String titular) {
@@ -51,8 +60,9 @@ public class Conta {
     }
 
     public float getSaldo() {
-        return saldo;
+        return this.saldo;
     }
+
 
     @Override
     public String toString() {

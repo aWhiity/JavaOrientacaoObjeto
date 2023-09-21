@@ -1,4 +1,4 @@
-package Encapsulado;
+package encapsulamento;
 public class Conta {
     private int agencia;
     private int numero;

@@ -1,4 +1,4 @@
-package Encapsulado;
+package encapsulamento;
 
 public class TestaGetSet {
     public static void main(String[] args) {

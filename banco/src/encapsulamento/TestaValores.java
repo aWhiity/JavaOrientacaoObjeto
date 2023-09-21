@@ -1,4 +1,4 @@
-package Encapsulado;
+package encapsulamento;
 
 public class TestaValores {
     public static void main(String[] args) {

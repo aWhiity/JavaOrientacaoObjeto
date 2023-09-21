@@ -1,4 +1,4 @@
-package Encapsulado.Exercicios.BancoSemNegativo;
+package encapsulamento.exercicios.bancoSemNegativo;
 
 import java.util.Scanner;
 

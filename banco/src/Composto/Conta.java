@@ -1,4 +1,4 @@
-package Composto;
+package composto;
 public class Conta {
     int agencia;
     int numero;
