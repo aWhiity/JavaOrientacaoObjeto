@@ -1,4 +1,4 @@
-package arraylistas;
+package arraylistas.produto;
 
 import java.util.Scanner;
 
