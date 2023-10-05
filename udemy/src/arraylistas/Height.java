@@ -2,7 +2,7 @@ package arraylistas;
 
 import java.util.Scanner;
 
-public class Altura {
+public class Height {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Digite a quantidade de posições: ");
