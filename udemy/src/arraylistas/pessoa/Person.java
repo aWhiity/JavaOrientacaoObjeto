@@ -1,9 +1,14 @@
-package arraylistas;
+package arraylistas.pessoa;
 
 public class Person {
     private String name;
     private int age;
     private double height;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     public Person(String name, int age, double height) {
         this.name = name;

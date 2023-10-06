@@ -1,4 +1,4 @@
-package arraylistas;
+package arraylistas.pessoa;
 
 import java.util.Scanner;
 
