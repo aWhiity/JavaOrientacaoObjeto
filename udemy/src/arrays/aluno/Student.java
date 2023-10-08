@@ -1,4 +1,4 @@
-package arraylistas.aluno;
+package arrays.aluno;
 
 public class Student {
     private String name;

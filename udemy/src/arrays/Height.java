@@ -1,4 +1,4 @@
-package arraylistas;
+package arrays;
 
 import java.util.Scanner;
 

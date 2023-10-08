@@ -1,4 +1,4 @@
-package arraylistas.aluno;
+package arrays.aluno;
 
 import java.util.Scanner;
 

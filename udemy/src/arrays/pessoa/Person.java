@@ -1,4 +1,4 @@
-package arraylistas.pessoa;
+package arrays.pessoa;
 
 public class Person {
     private String name;
