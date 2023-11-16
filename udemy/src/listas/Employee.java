@@ -9,6 +9,7 @@ public class Employee {
         this.id = id;
         this.salary = salary;
         this.name = name;
+        
     }
 
     public int getId() {
